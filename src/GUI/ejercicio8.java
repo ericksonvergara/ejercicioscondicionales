@@ -63,6 +63,7 @@ public class ejercicio8 extends javax.swing.JFrame {
 
     private void enviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarActionPerformed
         // TODO add your handling code here:
+        //hola
         int n1=Integer.parseInt(años.getText());
         int n2=Integer.parseInt(empleo.getText());
         
