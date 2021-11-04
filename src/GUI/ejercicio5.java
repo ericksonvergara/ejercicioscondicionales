@@ -71,6 +71,7 @@ public class ejercicio5 extends javax.swing.JFrame {
         
         if (n1>n2){
             respuesta.setText("la operacion es resta "+ (n1-n2));
+            
         }
         if (n1<n2){
             respuesta.setText("La operacion es suma " + (n1+n2));
