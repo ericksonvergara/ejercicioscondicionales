@@ -68,7 +68,7 @@ public class ejercicio10 extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(resultado);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 140, -1));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 230, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dados.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
@@ -89,7 +89,7 @@ public class ejercicio10 extends javax.swing.JFrame {
 
     private void enviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarActionPerformed
         // TODO add your handling code here:
-        int d1 = Integer.parseInt(jLabel1.getText());
+        int d1 = Integer.parseInt(dado1.getText());
         int d2 = Integer.parseInt(dado2.getText());
 
         if (d1 == d2) {
