@@ -36,9 +36,11 @@ public class ejercicio6 extends javax.swing.JFrame {
         numero3 = new javax.swing.JTextField();
         numero4 = new javax.swing.JTextField();
         enviar = new javax.swing.JButton();
-        resultado = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        resultado = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(500, 430));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("numero 1");
@@ -64,7 +66,10 @@ public class ejercicio6 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
-        getContentPane().add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 230, 70));
+
+        jScrollPane1.setViewportView(resultado);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 380, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -75,9 +80,62 @@ public class ejercicio6 extends javax.swing.JFrame {
         int n2=Integer.parseInt(numero2.getText());
         int n3=Integer.parseInt(numero3.getText());
         int n4=Integer.parseInt(numero4.getText());
+        int operacion;
         
-     int operacion;
-     operacion=(n1+n2+n3+n4)/4;
+        operacion = 0;
+        
+        /**
+        if(n1 > operacion){
+            resultado.setText("El número " + n1 + " es mayor que la media.");
+        }
+        if(n2 > operacion){
+            resultado.setText("El número " + n2 + " es mayor que la media.");
+        }
+        if(n3 > operacion){
+            resultado.setText("El número " + n3 + " es mayor que la media.");
+        }
+        if(n4 > operacion){
+            resultado.setText("El número " + n4 + " es mayor que la media.");
+        }
+        if(n1 > operacion && n2 > operacion){
+            resultado.setText("Los número " + n1 + " y " + n2 + " son mayores que la media.");
+        }
+        if(n1 > operacion && n3 > operacion){
+            resultado.setText("los número " + n1 + " y " + n3 + " son mayores que la media.");
+        }
+        if(n1 > operacion && n4 > operacion){
+            resultado.setText("Los número " + n1 + " y " + n4 + " son mayores que la media.");
+        }
+        if(n2 > operacion && n3 > operacion){
+            resultado.setText("Los número " + n2 + " y " + n3 + " son mayores que la media.");
+        }
+        if(n2 > operacion && n4 > operacion){
+            resultado.setText("Los número " + n2 + " y " + n4 + " son mayores que la media.");
+        }
+        if(n3 > operacion && n4 > operacion){
+            resultado.setText("los número " + n3 + " y " + n4 + " son mayores que la media.");
+        }
+        **/
+        
+        
+        operacion=(n1+n2+n3+n4)/4;
+        
+        if(n1 > operacion){
+            resultado.setText(resultado.getText()+" El numero " + n1 + " es mayor que la media. ");
+        }
+        if(n2 > operacion){
+            resultado.setText(resultado.getText()+" El número " + n2 + " es mayor que la media. ");
+        }
+        if(n3 > operacion){
+            resultado.setText(resultado.getText()+" El número " + n3 + " es mayor que la media. ");
+        }
+        if(n4 > operacion){
+            resultado.setText(resultado.getText()+" El número " + n4 + " es mayor que la media. ");
+        }
+        
+        
+        
+        
     }//GEN-LAST:event_enviarActionPerformed
 
     /**
@@ -121,10 +179,11 @@ public class ejercicio6 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField numero1;
     private javax.swing.JTextField numero2;
     private javax.swing.JTextField numero3;
     private javax.swing.JTextField numero4;
-    private javax.swing.JTextField resultado;
+    private javax.swing.JTextPane resultado;
     // End of variables declaration//GEN-END:variables
 }
