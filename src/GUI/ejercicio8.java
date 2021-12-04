@@ -38,16 +38,17 @@ public class ejercicio8 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel1.setText("tipos de juvilacion  por edad, por antigüedad joven y por antigüedad adulta");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 19, 470, 40));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 600, 40));
 
-        jLabel2.setText("digite la edad de empleo");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
+        jLabel2.setText("digite la edad de empleo:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, -1, -1));
 
-        jLabel3.setText("antiguedad de empleado");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 140, 20));
-        getContentPane().add(empleo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 110, 30));
-        getContentPane().add(años, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 110, 30));
+        jLabel3.setText("antiguedad de empleado:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 140, 20));
+        getContentPane().add(empleo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 110, 20));
+        getContentPane().add(años, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 110, 20));
 
         enviar.setText("enviar ");
         enviar.addActionListener(new java.awt.event.ActionListener() {
@@ -55,8 +56,8 @@ public class ejercicio8 extends javax.swing.JFrame {
                 enviarActionPerformed(evt);
             }
         });
-        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
-        getContentPane().add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 280, 100));
+        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, -1, -1));
+        getContentPane().add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 280, 100));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

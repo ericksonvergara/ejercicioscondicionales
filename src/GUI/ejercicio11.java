@@ -32,13 +32,14 @@ public class ejercicio11 extends javax.swing.JFrame {
         numero1 = new javax.swing.JTextField();
         numero2 = new javax.swing.JTextField();
         enviar = new javax.swing.JButton();
-        resultado = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        resultado = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("cual es la cantidad de empanadas que desea comprar");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 330, 20));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 430, 20));
 
         jLabel2.setText("cada empanada cuesta");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 210, 30));
@@ -51,8 +52,11 @@ public class ejercicio11 extends javax.swing.JFrame {
                 enviarActionPerformed(evt);
             }
         });
-        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
-        getContentPane().add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 350, 70));
+        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, -1, -1));
+
+        jScrollPane1.setViewportView(resultado);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 320, 90));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -69,28 +73,28 @@ public class ejercicio11 extends javax.swing.JFrame {
             r1=(float) ((n2*n1)*0.30);
             r2=n2*n1;
             r3=r2-r1;
-            resultado.setText("La cantidad a pagar es de: " + r3);
+            resultado.setText("Cantidad: " + n1 + "\nValor: " + n2 + "\nDescuento: " + r1 + "\nTotal a pagar: " + r3);
         }
         else{
             if(n1>200 && n1<300){
                 r1=(float) ((n2*n1)*0.20);
                 r2=n2*n1;
                 r3=r2-r1;
-                resultado.setText("La cantidad a pagar es de: " + r3);
+                resultado.setText("Cantidad: " + n1 + "\nValor: " + n2 + "\nDescuento: " + r1 + "\nTotal a pagar: " + r3);
             }
             else{
                 if(n1>=100 && n1<=200){
                    r1=(float) ((n2*n1)*0.10);
                    r2=n2*n1;
                    r3=r2-r1;
-                   resultado.setText("La cantidad a pagar es de: " + r3); 
+                   resultado.setText("Cantidad: " + n1 + "\nValor: " + n2 + "\nDescuento: " + r1 + "\nTotal a pagar: " + r3); 
                 }
                 else{
                     if(n1>50 && n1<100){
                       r1=(float) ((n2*n1)*0.05);
                       r2=n2*n1;
                       r3=r2-r1;
-                   resultado.setText("La cantidad a pagar es de: " + r3);  
+                   resultado.setText("Cantidad: " + n1 + "\nValor: " + n2 + "\nDescuento: " + r1 + "\nTotal a pagar: " + r3);  
                     }
                     else{
                         if(n1>=1 && n1<=50){
@@ -144,8 +148,9 @@ public class ejercicio11 extends javax.swing.JFrame {
     private javax.swing.JButton enviar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField numero1;
     private javax.swing.JTextField numero2;
-    private javax.swing.JTextField resultado;
+    private javax.swing.JTextPane resultado;
     // End of variables declaration//GEN-END:variables
 }

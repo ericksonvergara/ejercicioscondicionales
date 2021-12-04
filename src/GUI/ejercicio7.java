@@ -29,7 +29,7 @@ public class ejercicio7 extends javax.swing.JFrame {
         destinos.addItem("Miami");
         destinos.addItem("Madrid");
         
-        //añadiendo campos al jcombo tipp
+        //añadiendo campos al jcombo tipo
         tipos.addItem("Negocios");
         tipos.addItem("Familiar");
         tipos.addItem("Turista");
@@ -196,6 +196,8 @@ public class ejercicio7 extends javax.swing.JFrame {
         valor = 0;
         descuento = 0;
         
+        //Comparamos la clase y el destino para obtener el valor del tikeck
+        
         if(clase.equals(("Primera Clase")) && destino.equals("Miami")){
             valor = 1300000;
         }
@@ -214,6 +216,8 @@ public class ejercicio7 extends javax.swing.JFrame {
         if(clase.equals(("Tercera Clase")) && destino.equals("Madrid")){
             valor = 2320000;
         }
+        
+        //
         
         if(tipo.equals(("Negocios"))){
             descuento = 0;

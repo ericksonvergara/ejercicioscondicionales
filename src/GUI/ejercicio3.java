@@ -41,20 +41,21 @@ public class ejercicio3 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel1.setText("determinar cuantos numeros repetidos existen ");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
         jLabel2.setText("ingresar numero 1");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
 
         jLabel3.setText("ingresar numero 2");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 110, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 110, -1));
 
         jLabel4.setText("ingresar numero 3");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
-        getContentPane().add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 50, 60, -1));
-        getContentPane().add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 60, -1));
-        getContentPane().add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 60, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+        getContentPane().add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 60, -1));
+        getContentPane().add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 60, -1));
+        getContentPane().add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 60, -1));
 
         enviar.setText("enviar");
         enviar.addActionListener(new java.awt.event.ActionListener() {
@@ -62,8 +63,8 @@ public class ejercicio3 extends javax.swing.JFrame {
                 enviarActionPerformed(evt);
             }
         });
-        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, -1));
-        getContentPane().add(r, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 320, 40));
+        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
+        getContentPane().add(r, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 320, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

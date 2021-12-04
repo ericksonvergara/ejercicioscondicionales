@@ -32,13 +32,14 @@ public class ejercicio4 extends javax.swing.JFrame {
         enviar = new javax.swing.JButton();
         r1 = new javax.swing.JTextField();
         r2 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Digite un numero de 3 cifras");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 26, 180, 40));
-        getContentPane().add(numero, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 140, 30));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 180, 40));
+        getContentPane().add(numero, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 140, 30));
 
         enviar.setText("enviar");
         enviar.addActionListener(new java.awt.event.ActionListener() {
@@ -46,9 +47,13 @@ public class ejercicio4 extends javax.swing.JFrame {
                 enviarActionPerformed(evt);
             }
         });
-        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
-        getContentPane().add(r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 160, 30));
-        getContentPane().add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 160, 30));
+        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, -1, -1));
+        getContentPane().add(r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 160, 30));
+        getContentPane().add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 160, 30));
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jLabel2.setText("DETERMINAR EL NUMERO MAYOR Y MENOR FORMADO DESDE LA CIFRA INGRESADA");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -150,6 +155,7 @@ public class ejercicio4 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton enviar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField numero;
     private javax.swing.JTextField r1;
     private javax.swing.JTextField r2;

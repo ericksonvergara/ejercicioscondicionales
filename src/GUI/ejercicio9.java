@@ -35,21 +35,22 @@ public class ejercicio9 extends javax.swing.JFrame {
         numero3 = new javax.swing.JTextField();
         enviar = new javax.swing.JButton();
         respuesta = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("ingrese numero 1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 21, 100, 30));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 100, 30));
 
         jLabel2.setText("ingrese numero 2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 100, 20));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 100, 20));
 
         jLabel3.setText("ingrese numero 3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 104, 100, 20));
-        getContentPane().add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 70, 30));
-        getContentPane().add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 70, 30));
-        getContentPane().add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 70, 30));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 100, 20));
+        getContentPane().add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 70, 30));
+        getContentPane().add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 70, 30));
+        getContentPane().add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 70, 30));
 
         enviar.setText("enviar");
         enviar.addActionListener(new java.awt.event.ActionListener() {
@@ -57,8 +58,12 @@ public class ejercicio9 extends javax.swing.JFrame {
                 enviarActionPerformed(evt);
             }
         });
-        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 148, -1, -1));
-        getContentPane().add(respuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 189, 230, 50));
+        getContentPane().add(enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, -1, -1));
+        getContentPane().add(respuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 230, 50));
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel4.setText("Determinar el tipo de triangulo");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -135,6 +140,7 @@ public class ejercicio9 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField numero1;
     private javax.swing.JTextField numero2;
     private javax.swing.JTextField numero3;
